@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     
-     <BrowserRouter>
+     <BrowserRouter basename="/job-portal-host">
      <HeaderComponent/>
 
      <Routes>
