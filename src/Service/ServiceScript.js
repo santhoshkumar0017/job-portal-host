@@ -1,9 +1,9 @@
 import axios from 'axios'
 
 
-const REST_API_URL="http://localhost:8080/api/jobportal";
+const REST_API_URL="https://jobportalhost-50032949635.development.catalystappsail.in/api/jobportal";
 
-const REST_API_JOB_APPLY="http://localhost:8080/api/jobApplication"
+const REST_API_JOB_APPLY="https://jobportalhost-50032949635.development.catalystappsail.in/api/jobApplication"
 
 export const listofJobs=() =>axios.get(REST_API_URL);
 export const experienceLevelofJobs=(experienceLevel) =>axios.get(REST_API_URL+'/searchByExperienceLevel?experienceLevel='+experienceLevel);
