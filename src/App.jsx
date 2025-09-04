@@ -11,18 +11,15 @@ function App() {
   return (
     <>
     
-     <BrowserRouter basename="/job-portal-host">
+     <BrowserRouter >
      <HeaderComponent/>
 
-     <Routes>
+    <Routes>
+  <Route index element={<ListofJobs />} />
+  <Route path="api/jobApplication/:id" element={<JobApplicationComponent />} />
+  <Route path="add-job" element={<JobComponent />} />
+</Routes>
 
-     <Route path='/' element={<ListofJobs/>}> </Route>
-      
-     <Route path='/api/jobApplication/:id' element={<JobApplicationComponent/>}> </Route> 
-
-     <Route path='/add-job' element={<JobComponent/>}></Route>
-
-     </Routes>
      
      </BrowserRouter>
      
